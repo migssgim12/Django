@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+<section>
+    {% block content %}
+        {% if media.type == 'IMG' %} {# This is flow control #}
+            <img src = "{{ media.file.url }}">  {# these are variables #}
+        {% endif %}
+
+    {% endblock %}
+</section>
